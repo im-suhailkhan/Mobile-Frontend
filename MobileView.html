@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Website Deisgn using Html and Css</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="images/Bizzbucket  (1).png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Phone</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay">
+
+                </div>
+                <img src="images/Layer 2 (5).png" class="mobile">
+                <div>
+
+                </div>
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="images/career_.png">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>Wide lens</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/career__two_color (1).png">
+                        <div>
+                            <h1>Camera2</h1>
+                            <p>Wide lens</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="images/career__two_color (2).png">
+                        <div>
+                            <h1>Camera3</h1>
+                            <p>Wide lens</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="images/career__two_color.png">
+                        <div>
+                            <h1>Camera4</h1>
+                            <p>Wide lens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="images/graduation (1).png" id="upBtn">
+                <h3>Features</h3>
+                <img src="images/graduation.png" id="downBtn">
+            </div>
+        </div>
+        <script>
+            var circle=document.getElementById("circle");
+            var up=document.getElementById("upBtn");
+            var down=document.getElementById("downBtn");
+
+            var rotateValue=circle.style.transform;
+            var rotatesum;
+
+            up.onclick=function(){
+                rotatesum=rotateValue+"rotate(-90deg)";
+                circle.style.transform=rotatesum;
+                rotateValue=rotatesum;
+            }
+            down.onclick=function(){
+                rotatesum=rotateValue+"rotate(90deg)";
+                circle.style.transform=rotatesum;
+                rotateValue=rotatesum;
+            }
+        </script>
+    </body>
+</html>
